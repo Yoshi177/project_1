@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>phpword</title>
+    <style>
+      input {
+        width: 300px;
+        height: 50px;
+        display: block;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 300px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="word.php" method="post" enctype="multipart/form-data">
+      <input type="text" name="theme" placeholder="Введите тему работы" />
+      <input type="text" name="group" placeholder="Введите группу" />
+      <input type="number" name="numbergr" placeholder="Введите номер группы" />
+      <input type="text" name="name" placeholder="Введите ФИО" />
+      <input type="tel" name="tel" placeholder="Введите телефон" />
+      <input type="text" name="city" placeholder="Введите город проживания" />
+      <input type="date" name="birth" />
+      <input
+        type="number"
+        name="startYear"
+        placeholder="Введите начальный год"
+      />
+      <input type="number" name="LYear" placeholder="Введите последний год" />
+      <input type="text" name="university" placeholder="Введите университет" />
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
